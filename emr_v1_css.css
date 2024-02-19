@@ -1,0 +1,214 @@
+body {
+    background-color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#h1 {
+    text-align: center;
+}
+
+h2 {
+    margin: 1px 0px 10px 1px;
+}
+
+input[type="text"],
+select {
+    border-radius: 4px;
+    border: 1px solid black;
+    box-shadow: 2px 2px 2px 2px rgb(0, 0, 0, 30%);
+
+}
+
+div {
+    border-radius: 8px;
+}
+
+#submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px
+}
+
+
+.section {
+    border-radius: 4px;
+    border: 5px solid black;
+    margin: 20px 12%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.subjectiveinput,
+.assessmentinput {
+    border: 0px solid rgb(0, 0, 0, 30%);
+    margin: 6px;
+    padding: 2px;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+
+.mmt {
+    text-align: right;
+}
+
+.left,
+.right {
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid black;
+}
+
+.jointdiv input,
+.jointdiv select {
+    margin-top: 5px;
+}
+
+.jointdiv label {
+    width: 150px;
+    margin-right: 5px;
+    margin-top: 5px;
+    text-align: left;
+    float: left;
+}
+
+.assessmentinput label,
+.subjectiveinput label {
+    font-weight: bold;
+    width: 55%;
+    margin-left: 5px;
+    padding: 5px 5px 5px 5px;
+    border-radius: 4px;
+    text-align: left;
+}
+
+.subjectiveinput input,
+.assessmentinput input {
+    width: 200%;
+    text-align: left;
+    height: 25px;
+}
+
+.jointdiv {
+    border: 5px solid black;
+    margin: 4px;
+    padding: 4px;
+    display: none;
+    flex-direction: column;
+    justify-content: flex-start;
+    border-radius: 8px;
+    text-align: center;
+    background-color: white;
+
+}
+
+.sides {
+    display: flex;
+    justify-content: center;
+}
+
+.objtext {
+    margin: 4px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.jointdiv textarea {
+
+    margin: 0px;
+    justify-content: center;
+}
+
+.rangeofmotion input {
+    width: 45px
+}
+
+.sectionheader {
+    width: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.planinput {
+    border: 2px solid black;
+    margin: 0px 20px 10px 4px;
+    padding: 4px;
+    width: 25%;
+    justify-content: left;
+    background-color: #ffffff;
+
+}
+
+
+
+#assdiv,
+#subdiv {
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+}
+
+#subdiv {
+    background-color: rgba(243, 238, 238, 0.753);
+
+}
+
+#objdiv {
+    background-color: rgba(243, 238, 238, 0.753);
+    justify-content: center;
+}
+
+#assdiv {
+    background-color: rgba(243, 238, 238, 0.753);
+
+}
+
+#plandiv {
+    background-color: rgba(243, 238, 238, 0.753);
+    margin-right: 40%;
+    margin-left: 40%;
+    justify-content: space-around;
+}
+
+#subquestions,
+#assquestions {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 10px;
+    background-color: #ffffff;
+    border: 1px solid black;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#jointselect {
+    width: 100%;
+    text-align: center;
+}
+
+#subjectivetext,
+#assessmenttext {
+    border-radius: 4px;
+    margin: 6px;
+    width: 40%;
+    height: 300px;
+    border: 3px solid black;
+    font-size: 18px;
+}
+
+#submitbutton {
+    height: 40px;
+    width: 150px;
+
+
+}

@@ -1005,22 +1005,26 @@ function generatePDF() {
             doc.setFont("courier", "normal");
             var splitObservation = doc.splitTextToSize(shoulderobservation, 170 - labelwidth);
             doc.text(splitObservation, labelwidth + 20, verticalposition);
-            if (shoulderobservationwidth < 170 - labelwidth) {
-                doc.line(20, verticalposition + 5, 190, verticalposition + 5)
+            if (shoulderpalpationwidth < 170 - labelwidth) {
+                doc.line(20, verticalposition + 5, 190, verticalposition + 5);
+                verticalposition += 15;
             }
-            else if (shoulderobservationwidth < (170-labelwidth) * 2) {
-                doc.line(20, verticalposition + 10, 190, verticalposition + 10)
+            else if (shoulderpalpationwidth < (170-labelwidth) * 2) {
+                doc.line(20, verticalposition + 10, 190, verticalposition + 10);
+                verticalposition += 20;
             }
-            else if (shoulderobservationwidth < (170-labelwidth) * 3) {
-                doc.line(20, verticalposition + 15, 190, verticalposition + 15)
+            else if (shoulderpalpationwidth < (170-labelwidth) * 3) {
+                doc.line(20, verticalposition + 15, 190, verticalposition + 15);
+                verticalposition += 25;
             }
-            else if (shoulderobservationwidth < (170-labelwidth) * 4) {
-                doc.line(20, verticalposition + 20, 190, verticalposition + 20)
+            else if (shoulderpalpationwidth < (170-labelwidth) * 4) {
+                doc.line(20, verticalposition + 20, 190, verticalposition + 20);
+                verticalposition += 30;
             }
-            else if (shoulderobservationwidth < (170-labelwidth) * 5) {
-                doc.line(20, verticalposition + 25, 190, verticalposition + 25)
+            else if (shoulderpalpationwidth < (170-labelwidth) * 5) {
+                doc.line(20, verticalposition + 25, 190, verticalposition + 25);
+                verticalposition += 35;
             }
-            verticalposition += 10;
         }
 
 
@@ -1037,22 +1041,26 @@ function generatePDF() {
             var splitPalpation = doc.splitTextToSize(shoulderpalpation, 170 - labelwidth);
             doc.text(splitPalpation, labelwidth + 20, verticalposition);
             if (shoulderpalpationwidth < 170 - labelwidth) {
-                doc.line(20, verticalposition + 5, 190, verticalposition + 5)
+                doc.line(20, verticalposition + 5, 190, verticalposition + 5);
+                verticalposition += 15;
             }
             else if (shoulderpalpationwidth < (170-labelwidth) * 2) {
-                doc.line(20, verticalposition + 10, 190, verticalposition + 10)
+                doc.line(20, verticalposition + 10, 190, verticalposition + 10);
+                verticalposition += 20;
             }
             else if (shoulderpalpationwidth < (170-labelwidth) * 3) {
-                doc.line(20, verticalposition + 15, 190, verticalposition + 15)
+                doc.line(20, verticalposition + 15, 190, verticalposition + 15);
+                verticalposition += 25;
             }
             else if (shoulderpalpationwidth < (170-labelwidth) * 4) {
-                doc.line(20, verticalposition + 20, 190, verticalposition + 20)
+                doc.line(20, verticalposition + 20, 190, verticalposition + 20);
+                verticalposition += 30;
             }
             else if (shoulderpalpationwidth < (170-labelwidth) * 5) {
-                doc.line(20, verticalposition + 25, 190, verticalposition + 25)
+                doc.line(20, verticalposition + 25, 190, verticalposition + 25);
+                verticalposition += 35;
             }
             
-            verticalposition += 10;
         }
 
 
@@ -1070,23 +1078,26 @@ function generatePDF() {
             doc.setFont("courier", "normal");
             var splitMobility = doc.splitTextToSize(shouldermobility, 170 - labelwidth);
             doc.text(splitMobility, labelwidth + 20, verticalposition);
-            if (shouldermobilitywidth < 170 - labelwidth) {
-                doc.line(20, verticalposition + 5, 190, verticalposition + 5)
+            if (shoulderpalpationwidth < 170 - labelwidth) {
+                doc.line(20, verticalposition + 5, 190, verticalposition + 5);
+                verticalposition += 15;
             }
-            else if (shouldermobilitywidth < (170-labelwidth) * 2) {
-                doc.line(20, verticalposition + 10, 190, verticalposition + 10)
+            else if (shoulderpalpationwidth < (170-labelwidth) * 2) {
+                doc.line(20, verticalposition + 10, 190, verticalposition + 10);
+                verticalposition += 20;
             }
-            else if (shouldermobilitywidth < (170-labelwidth) * 3) {
-                doc.line(20, verticalposition + 15, 190, verticalposition + 15)
+            else if (shoulderpalpationwidth < (170-labelwidth) * 3) {
+                doc.line(20, verticalposition + 15, 190, verticalposition + 15);
+                verticalposition += 25;
             }
-            else if (shouldermobilitywidth < (170-labelwidth) * 4) {
-                doc.line(20, verticalposition + 20, 190, verticalposition + 20)
+            else if (shoulderpalpationwidth < (170-labelwidth) * 4) {
+                doc.line(20, verticalposition + 20, 190, verticalposition + 20);
+                verticalposition += 30;
             }
-            else if (shouldermobilitywidth < (170-labelwidth) * 5) {
-                doc.line(20, verticalposition + 25, 190, verticalposition + 25)
+            else if (shoulderpalpationwidth < (170-labelwidth) * 5) {
+                doc.line(20, verticalposition + 25, 190, verticalposition + 25);
+                verticalposition += 35;
             }
-            
-            verticalposition += 10;
         }
 
 
@@ -1101,23 +1112,26 @@ function generatePDF() {
             doc.setFont("courier", "normal");
             var splitShoulderspecialtests = doc.splitTextToSize(shoulderspecialtests, 170 - labelwidth);
             doc.text(splitShoulderspecialtests, labelwidth + 20, verticalposition);
-            if (shoulderspecialtestswidth < 170 - labelwidth) {
-                doc.line(20, verticalposition + 5, 190, verticalposition + 5)
+            if (shoulderpalpationwidth < 170 - labelwidth) {
+                doc.line(20, verticalposition + 5, 190, verticalposition + 5);
+                verticalposition += 15;
             }
-            else if (shoulderspecialtestswidth < (170-labelwidth) * 2) {
-                doc.line(20, verticalposition + 10, 190, verticalposition + 10)
+            else if (shoulderpalpationwidth < (170-labelwidth) * 2) {
+                doc.line(20, verticalposition + 10, 190, verticalposition + 10);
+                verticalposition += 20;
             }
-            else if (shoulderspecialtestswidth < (170-labelwidth) * 3) {
-                doc.line(20, verticalposition + 15, 190, verticalposition + 15)
+            else if (shoulderpalpationwidth < (170-labelwidth) * 3) {
+                doc.line(20, verticalposition + 15, 190, verticalposition + 15);
+                verticalposition += 25;
             }
-            else if (shoulderspecialtestswidth < (170-labelwidth) * 4) {
-                doc.line(20, verticalposition + 20, 190, verticalposition + 20)
+            else if (shoulderpalpationwidth < (170-labelwidth) * 4) {
+                doc.line(20, verticalposition + 20, 190, verticalposition + 20);
+                verticalposition += 30;
             }
-            else if (shoulderspecialtestswidth < (170-labelwidth) * 5) {
-                doc.line(20, verticalposition + 25, 190, verticalposition + 25)
+            else if (shoulderpalpationwidth < (170-labelwidth) * 5) {
+                doc.line(20, verticalposition + 25, 190, verticalposition + 25);
+                verticalposition += 35;
             }
-            
-            verticalposition += 10;
         }
 
 

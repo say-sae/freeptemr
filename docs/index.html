@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="" en>
+<html lang="en" >
 
 <head>
     <title> Physical Therapy Evaluation</title>
@@ -7,6 +7,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script type="text/javascript" src="initialevalscript.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
 </head>
 
@@ -29,6 +30,7 @@
                 <div class="subjectiveinput">
                     <label for="painscale">Pain Scale</label>
                     <select name="painscale" id="painscale">
+                        <option value=""></option>
                         <option value="0">0/10</option>
                         <option value="1">1/10</option>
                         <option value="2">2/10</option>
@@ -131,14 +133,11 @@
                 <div class="sectionheader">
                     <h3>Shoulder</h3>
                 </div>
-                <div class="objtext">
-                    <h4>Observation</h4>
-                    <textarea id="shoulderobservation"></textarea>
-                </div>
+
 
                 <div class="sides">
                     <div class="left">
-                        <div class="strength">
+                        <div class="strength" id="lshouldermmt">
                             <h4>Strength (Left)</h4>
                             <div class="mmt">
                                 <label for="lshouldermmtflex">Flexion:</label>
@@ -414,6 +413,10 @@
                     </div>
                 </div>
 
+                <div class="objtext">
+                    <h4>Observation</h4>
+                    <textarea id="shoulderobservation"></textarea>
+                </div>
 
 
                 <div class="objtext">
@@ -439,10 +442,7 @@
                 <div class="sectionheader">
                     <h3>Elbow</h3>
                 </div>
-                <div class="objtext">
-                    <h4>Observation</h4>
-                    <textarea id="elbowobservation"></textarea>
-                </div>
+
                 <div class="sides">
                     <div class="left">
                         <div class="strength">
@@ -572,6 +572,11 @@
                 </div>
 
                 <div class="objtext">
+                    <h4>Observation</h4>
+                    <textarea id="elbowobservation"></textarea>
+                </div>
+
+                <div class="objtext">
                     <h4>Palpation</h4>
                     <textarea id="elbowpalpation"></textarea>
                 </div>
@@ -609,10 +614,7 @@
                 <div class="sectionheader">
                     <h3>Wrist</h3>
                 </div>
-                <div class="objtext">
-                    <h4>Observation</h4>
-                    <textarea id="wristobservation"></textarea>
-                </div>
+
                 <div class="sides">
                     <div class="left">
                         <div class="strength">
@@ -978,6 +980,12 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="objtext">
+                    <h4>Observation</h4>
+                    <textarea id="wristobservation"></textarea>
+                </div>
+
                 <div class="objtext">
                     <h4>Palpation</h4>
                     <textarea id="wristpalpation"></textarea>
@@ -1012,10 +1020,7 @@
                 <div class="sectionheader">
                     <h3>Hip</h3>
                 </div>
-                <div class="objtext">
-                    <h4>Observation</h4>
-                    <textarea id="hipobservation"></textarea>
-                </div>
+
 
                 <div class="sides">
                     <div class="left">
@@ -1336,6 +1341,11 @@
                 </div>
 
                 <div class="objtext">
+                    <h4>Observation</h4>
+                    <textarea id="hipobservation"></textarea>
+                </div>
+
+                <div class="objtext">
                     <h4>Palpation</h4>
                     <textarea id="hippalpation"></textarea>
                 </div>
@@ -1368,10 +1378,7 @@
                 <div class="sectionheader">
                     <h3>Knee</h3>
                 </div>
-                <div class="objtext">
-                    <h4>Observation</h4>
-                    <textarea id="kneeobservation"></textarea>
-                </div>
+               
 
                 <div class="sides">
                     <div class="left">
@@ -1501,6 +1508,10 @@
                     </div>
                 </div>
 
+                <div class="objtext">
+                    <h4>Observation</h4>
+                    <textarea id="kneeobservation"></textarea>
+                </div>
 
                 <div class="objtext">
                     <h4>Palpation</h4>
@@ -1534,10 +1545,7 @@
                 <div class="sectionheader">
                     <h3>Ankle</h3>
                 </div>
-                <div class="objtext">
-                    <h4>Observation</h4>
-                    <textarea id="ankleobservation"></textarea>
-                </div>
+               
                 <div class="sides">
                     <div class="left">
                         <div class="strength">
@@ -1767,6 +1775,12 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="objtext">
+                    <h4>Observation</h4>
+                    <textarea id="ankleobservation"></textarea>
+                </div>
+
                 <div class="objtext">
                     <h4>Palpation</h4>
                     <textarea id="anklepalpation"></textarea>
@@ -1798,10 +1812,7 @@
                 <div class="sectionheader">
                     <h3>Cervical & Thoracic</h3>
                 </div>
-                <div class="objtext">
-                    <h4>Observation</h4>
-                    <textarea id="ctobservation"></textarea>
-                </div>
+                
 
                 <div class="left">
                     <div class="strength">
@@ -1967,6 +1978,10 @@
                     </div>
                 </div>
 
+                <div class="objtext">
+                    <h4>Observation</h4>
+                    <textarea id="ctobservation"></textarea>
+                </div>
 
                 <div class="objtext">
                     <h4>Palpation</h4>
@@ -1998,10 +2013,7 @@
                 <div class="sectionheader">
                     <h3>Lumbar & Sacrum</h3>
                 </div>
-                <div class="objtext">
-                    <h4>Observation</h4>
-                    <textarea id="lsobservation"></textarea>
-                </div>
+               
 
                 <div class="left">
                     <div class="strength">
@@ -2166,7 +2178,11 @@
                         </div>
                     </div>
                 </div>
-
+                
+                <div class="objtext">
+                    <h4>Observation</h4>
+                    <textarea id="lsobservation"></textarea>
+                </div>
 
                 <div class="objtext">
                     <h4>Palpation</h4>

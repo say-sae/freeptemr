@@ -382,6 +382,8 @@ function generatePDF() {
 
     }
 
+
+
     /*ANKLE VARIABLES*/{
 
 
@@ -402,7 +404,7 @@ function generatePDF() {
         var lanklemmtplusminusinv = document.getElementById('lanklemmtplusminusinv').value;
         var lanklemmtev = document.getElementById('lanklemmtev').value;
         var lanklemmtplusminusev = document.getElementById('lanklemmtplusminusev').value;
-        
+
 
 
         //LEFT ANKLE AROM
@@ -411,7 +413,7 @@ function generatePDF() {
         var lanklearompflex = document.getElementById('lanklearompflex').value;
         var lanklearominv = document.getElementById('lanklearominv').value;
         var lanklearomev = document.getElementById('lanklearomev').value;
-     
+
 
         //LEFT ANKLE PROM
 
@@ -419,7 +421,7 @@ function generatePDF() {
         var lankleprompflex = document.getElementById('lankleprompflex').value;
         var lankleprominv = document.getElementById('lankleprominv').value;
         var lanklepromev = document.getElementById('lanklepromev').value;
-        
+
 
 
         //RIGHT ANKLE MMT
@@ -431,7 +433,7 @@ function generatePDF() {
         var ranklemmtplusminusinv = document.getElementById('ranklemmtplusminusinv').value;
         var ranklemmtev = document.getElementById('ranklemmtev').value;
         var ranklemmtplusminusev = document.getElementById('ranklemmtplusminusev').value;
-        
+
 
 
         //LEFT ANKLE AROM
@@ -440,7 +442,7 @@ function generatePDF() {
         var ranklearompflex = document.getElementById('ranklearompflex').value;
         var ranklearominv = document.getElementById('ranklearominv').value;
         var ranklearomev = document.getElementById('ranklearomev').value;
-     
+
 
         //LEFT ANKLE PROM
 
@@ -453,6 +455,97 @@ function generatePDF() {
     }
 
 
+    /*CERVICOTHORACIC VARIABLES*/{
+
+
+        //Observation/Palpation/Specialtests
+        var untrimmedctobservation = document.getElementById('ctobservation').value;
+        var ctobservation = trimLineBreaks(untrimmedctobservation);
+        var ctpalpation = document.getElementById('ctpalpation').value;
+        var ctmobility = document.getElementById('ctmobility').value;
+        var ctspecialtests = document.getElementById('ctspecialtests').value;
+
+
+        //LEFT CT MMT
+        var ctmmtflex = document.getElementById('ctmmtflex').value;
+        var ctmmtplusminusflex = document.getElementById('ctmmtplusminusflex').value;
+        var ctmmtext = document.getElementById('ctmmtext').value;
+        var ctmmtplusminusext = document.getElementById('ctmmtplusminusext').value;
+        var ctmmtrrot = document.getElementById('ctmmtrrot').value;
+        var ctmmtplusminusrrot = document.getElementById('ctmmtplusminusrrot').value;
+        var ctmmtlrot = document.getElementById('ctmmtlrot').value;
+        var ctmmtplusminuslrot = document.getElementById('ctmmtplusminuslrot').value;
+        var ctmmtrsb = document.getElementById('ctmmtrsb').value;
+        var ctmmtplusminusrsb = document.getElementById('ctmmtplusminusrsb').value;
+        var ctmmtlsb = document.getElementById('ctmmtlsb').value;
+        var ctmmtplusminuslsb = document.getElementById('ctmmtplusminuslsb').value;
+
+        //LEFT CT AROM
+
+        var ctaromflex = document.getElementById('ctaromflex').value;
+        var ctaromext = document.getElementById('ctaromext').value;
+        var ctaromrrot = document.getElementById('ctaromrrot').value;
+        var ctaromlrot = document.getElementById('ctaromlrot').value;
+        var ctaromrsb = document.getElementById('ctaromrsb').value;
+        var ctaromlsb = document.getElementById('ctaromlsb').value;
+
+        //LEFT CT PROM
+
+        var ctpromflex = document.getElementById('ctpromflex').value;
+        var ctpromext = document.getElementById('ctpromext').value;
+        var ctpromrrot = document.getElementById('ctpromrrot').value;
+        var ctpromlrot = document.getElementById('ctpromlrot').value;
+        var ctpromrsb = document.getElementById('ctpromrsb').value;
+        var ctpromlsb = document.getElementById('ctpromlsb').value;
+
+
+    }
+
+    /*LUMBOSACRAL VARIABLES*/{
+
+
+        //Observation/Palpation/Specialtests
+        var untrimmedlsobservation = document.getElementById('lsobservation').value;
+        var lsobservation = trimLineBreaks(untrimmedlsobservation);
+        var lspalpation = document.getElementById('lspalpation').value;
+        var lsmobility = document.getElementById('lsmobility').value;
+        var lsspecialtests = document.getElementById('lsspecialtests').value;
+
+
+        //LEFT LS MMT
+        var lsmmtflex = document.getElementById('lsmmtflex').value;
+        var lsmmtplusminusflex = document.getElementById('lsmmtplusminusflex').value;
+        var lsmmtext = document.getElementById('lsmmtext').value;
+        var lsmmtplusminusext = document.getElementById('lsmmtplusminusext').value;
+        var lsmmtrrot = document.getElementById('lsmmtrrot').value;
+        var lsmmtplusminusrrot = document.getElementById('lsmmtplusminusrrot').value;
+        var lsmmtlrot = document.getElementById('lsmmtlrot').value;
+        var lsmmtplusminuslrot = document.getElementById('lsmmtplusminuslrot').value;
+        var lsmmtrsb = document.getElementById('lsmmtrsb').value;
+        var lsmmtplusminusrsb = document.getElementById('lsmmtplusminusrsb').value;
+        var lsmmtlsb = document.getElementById('lsmmtlsb').value;
+        var lsmmtplusminuslsb = document.getElementById('lsmmtplusminuslsb').value;
+
+        //LEFT LS AROM
+
+        var lsaromflex = document.getElementById('lsaromflex').value;
+        var lsaromext = document.getElementById('lsaromext').value;
+        var lsaromrrot = document.getElementById('lsaromrrot').value;
+        var lsaromlrot = document.getElementById('lsaromlrot').value;
+        var lsaromrsb = document.getElementById('lsaromrsb').value;
+        var lsaromlsb = document.getElementById('lsaromlsb').value;
+
+        //LEFT LS PROM
+
+        var lspromflex = document.getElementById('lspromflex').value;
+        var lspromext = document.getElementById('lspromext').value;
+        var lspromrrot = document.getElementById('lspromrrot').value;
+        var lspromlrot = document.getElementById('lspromlrot').value;
+        var lspromrsb = document.getElementById('lspromrsb').value;
+        var lspromlsb = document.getElementById('lspromlsb').value;
+
+
+    }
 
     //ASSESSMENT VARIABLES
 
@@ -4716,7 +4809,7 @@ function generatePDF() {
             var leftverticalposition = verticalposition;
             leftverticalposition += 10;
         }
-      
+
 
 
         //DISPLAYS R ANKLE MMT IF ANY MMT INPUT IS PRESENT
@@ -4744,7 +4837,7 @@ function generatePDF() {
             var rightverticalposition = verticalposition;
             rightverticalposition += 10;
         }
-       
+
 
 
 
@@ -4786,8 +4879,8 @@ function generatePDF() {
             doc.text(lanklemmtev + lanklemmtplusminusev.trim() + '/5', 75, leftverticalposition);
             leftverticalposition += 5;
         }
-      
-        
+
+
 
         //POPULATE R ANKLE MMT MEASUREMENTS
 
@@ -4823,7 +4916,7 @@ function generatePDF() {
             doc.text(ranklemmtev + ranklemmtplusminusev.trim() + '/5', 75, rightverticalposition);
             rightverticalposition += 5;
         }
-        
+
 
 
 
@@ -4911,7 +5004,7 @@ function generatePDF() {
             var leftverticalposition = verticalposition;
             leftverticalposition += 10;
         }
-       
+
 
 
         //DISPLAYS R ANKLE AROM IF ANY AROM INPUT IS PRESENT
@@ -4939,7 +5032,7 @@ function generatePDF() {
             var rightverticalposition = verticalposition;
             rightverticalposition += 10;
         }
-     
+
 
 
 
@@ -4982,7 +5075,7 @@ function generatePDF() {
             doc.text(lanklearomev + ' deg', 75, leftverticalposition);
             leftverticalposition += 5;
         }
-       
+
         //POPULATE R ANKLE AROM MEASUREMENTS
 
         if (hasUserInput(ranklearomdflex)) {
@@ -5017,7 +5110,7 @@ function generatePDF() {
             doc.text(ranklearomev + ' deg', 75, rightverticalposition);
             rightverticalposition += 5;
         }
-     
+
 
 
 
@@ -5100,7 +5193,7 @@ function generatePDF() {
             var leftverticalposition = verticalposition;
             leftverticalposition += 10;
         }
-       
+
 
 
 
@@ -5129,7 +5222,7 @@ function generatePDF() {
             var rightverticalposition = verticalposition;
             rightverticalposition += 10;
         }
-       
+
 
 
 
@@ -5172,7 +5265,7 @@ function generatePDF() {
             doc.text(lanklepromev + ' deg', 75, leftverticalposition);
             leftverticalposition += 5;
         }
-    
+
 
         //POPULATE R ANKLE PROM MEASUREMENTS
 
@@ -5208,7 +5301,7 @@ function generatePDF() {
             doc.text(ranklepromev + ' deg', 75, rightverticalposition);
             rightverticalposition += 5;
         }
-        
+
 
 
 
@@ -5381,9 +5474,1228 @@ function generatePDF() {
 
 
 
+    //CT OBJECTIVE
+    if (ctcheckbox.checked) {
+        doc.addPage();
+        var verticalposition = 10;
+        doc.setFont("courier", "bold");
+        doc.text("Ct", 105, verticalposition, 'center');
+        doc.setFont("courier", "normal");
+        verticalposition += 10;
 
 
 
+
+
+
+
+
+
+        //DISPLAYS  CT MMT IF ANY MMT INPUT IS PRESENT
+        if (hasUserInput(ctmmtflex)) {
+            doc.setFont("courier", "bold");
+            doc.text("Cervicothoracic MMT", 20, verticalposition);
+            var leftverticalposition = verticalposition;
+            leftverticalposition += 10;
+        }
+        else if (hasUserInput(ctmmtext)) {
+            doc.setFont("courier", "bold");
+            doc.text("Cervicothoracic MMT", 20, verticalposition);
+            var leftverticalposition = verticalposition;
+            leftverticalposition += 10;
+        }
+        else if (hasUserInput(ctmmtrrot)) {
+            doc.setFont("courier", "bold");
+            doc.text("Cervicothoracic MMT", 20, verticalposition);
+            var leftverticalposition = verticalposition;
+            leftverticalposition += 10;
+        }
+        else if (hasUserInput(ctmmtlrot)) {
+            doc.setFont("courier", "bold");
+            doc.text("Cervicothoracic MMT", 20, verticalposition);
+            var leftverticalposition = verticalposition;
+            leftverticalposition += 10;
+        }
+        else if (hasUserInput(ctmmtrsb)) {
+            doc.setFont("courier", "bold");
+            doc.text("Cervicothoracic MMT", 20, verticalposition);
+            var leftverticalposition = verticalposition;
+            leftverticalposition += 10;
+        }
+        else if (hasUserInput(ctmmtlsb)) {
+            doc.setFont("courier", "bold");
+            doc.text("Cervicothoracic MMT", 20, verticalposition);
+            var leftverticalposition = verticalposition;
+            leftverticalposition += 10;
+        }
+
+
+
+
+
+
+        doc.setFont("courier", "normal");
+        doc.setFontSize(14);
+
+
+        //POPULATE CT MMT MEASUREMENTS
+
+        if (hasUserInput(ctmmtflex)) {
+            doc.setFont("courier", "normal");
+            doc.text("Flexion: ", 20, leftverticalposition);
+            var labelwidth = doc.getTextWidth('Flexion: ');
+            doc.setFont("courier", "bold");
+            doc.text(ctmmtflex + ctmmtplusminusflex.trim() + '/5', 75, leftverticalposition);
+            leftverticalposition += 5;
+        }
+        if (hasUserInput(ctmmtext)) {
+            doc.setFont("courier", "normal");
+            doc.text("Extension: ", 20, leftverticalposition);
+            var labelwidth = doc.getTextWidth('Extension: ');
+            doc.setFont("courier", "bold");
+            doc.text(ctmmtext + ctmmtplusminusext.trim() + '/5', 75, leftverticalposition);
+            leftverticalposition += 5;
+        }
+        if (hasUserInput(ctmmtrrot)) {
+            doc.setFont("courier", "normal");
+            doc.text("Right rotation: ", 20, leftverticalposition);
+            var labelwidth = doc.getTextWidth('Right rotation: ');
+            doc.setFont("courier", "bold");
+            doc.text(ctmmtrrot + ctmmtplusminusrrot.trim() + '/5', 75, leftverticalposition);
+            leftverticalposition += 5;
+        }
+        if (hasUserInput(ctmmtlrot)) {
+            doc.setFont("courier", "normal");
+            doc.text("Left Rotation: ", 20, leftverticalposition);
+            var labelwidth = doc.getTextWidth('Left Rotation: ');
+            doc.setFont("courier", "bold");
+            doc.text(ctmmtlrot + ctmmtplusminuslrot.trim() + '/5', 75, leftverticalposition);
+            leftverticalposition += 5;
+        }
+        if (hasUserInput(ctmmtrsb)) {
+            doc.setFont("courier", "normal");
+            doc.text("Right Sidebending: ", 20, leftverticalposition);
+            var labelwidth = doc.getTextWidth('Right Sidebending: ');
+            doc.setFont("courier", "bold");
+            doc.text(ctmmtrsb + ctmmtplusminusrsb.trim() + '/5', 75, leftverticalposition);
+            leftverticalposition += 5;
+        }
+        if (hasUserInput(ctmmtlsb)) {
+            doc.setFont("courier", "normal");
+            doc.text("Left Sidebending: ", 20, leftverticalposition);
+            var labelwidth = doc.getTextWidth('Left Sidebending: ');
+            doc.setFont("courier", "bold");
+            doc.text(ctmmtlsb + ctmmtplusminuslsb.trim() + '/5', 75, leftverticalposition);
+            leftverticalposition += 5;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        //SET STARTING POSITION FOR AROM
+
+
+        if (rightverticalposition >= leftverticalposition) {
+            var verticalposition = rightverticalposition;
+            doc.line(20, verticalposition + 6, 190, verticalposition + 6);
+            verticalposition += 15;
+        }
+        else if (rightverticalposition < leftverticalposition) {
+            var verticalposition = leftverticalposition;
+            doc.line(20, verticalposition + 5, 190, verticalposition + 5);
+            verticalposition += 15;
+        }
+        else {
+            var verticalposition = verticalposition;
+        }
+
+
+
+
+
+
+
+
+
+
+
+        //CT AROM
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        //DISPLAYS CT AROM IF ANY AROM INPUT IS PRESENT
+        if (hasUserInput(ctaromflex)) {
+            doc.setFont("courier", "bold");
+            doc.text("Cervicothoracic AROM", 20, verticalposition);
+            var leftverticalposition = verticalposition;
+            leftverticalposition += 10;
+        }
+        else if (hasUserInput(ctaromext)) {
+            doc.setFont("courier", "bold");
+            doc.text("Cervicothoracic AROM", 20, verticalposition);
+            var leftverticalposition = verticalposition;
+            leftverticalposition += 10;
+        }
+        else if (hasUserInput(ctaromrrot)) {
+            doc.setFont("courier", "bold");
+            doc.text("Cervicothoracic AROM", 20, verticalposition);
+            var leftverticalposition = verticalposition;
+            leftverticalposition += 10;
+        }
+        else if (hasUserInput(ctaromlrot)) {
+            doc.setFont("courier", "bold");
+            doc.text("Cervicothoracic AROM", 20, verticalposition);
+            var leftverticalposition = verticalposition;
+            leftverticalposition += 10;
+        }
+        else if (hasUserInput(ctaromrsb)) {
+            doc.setFont("courier", "bold");
+            doc.text("Cervicothoracic AROM", 20, verticalposition);
+            var leftverticalposition = verticalposition;
+            leftverticalposition += 10;
+        }
+        else if (hasUserInput(ctaromlsb)) {
+            doc.setFont("courier", "bold");
+            doc.text("Cervicothoracic AROM", 20, verticalposition);
+            var leftverticalposition = verticalposition;
+            leftverticalposition += 10;
+        }
+
+
+
+
+
+
+        doc.setFont("courier", "normal");
+        doc.setFontSize(14);
+
+
+        //POPULATE CT AROM MEASUREMENTS
+
+        if (hasUserInput(ctaromflex)) {
+            doc.setFont("courier", "normal");
+            doc.text("Flexion: ", 20, leftverticalposition);
+            var labelwidth = doc.getTextWidth('Flexion: ');
+            doc.setFont("courier", "bold");
+            doc.text(ctaromflex + 'deg', 75, leftverticalposition);
+            leftverticalposition += 5;
+        }
+        if (hasUserInput(ctaromext)) {
+            doc.setFont("courier", "normal");
+            doc.text("Extension: ", 20, leftverticalposition);
+            var labelwidth = doc.getTextWidth('Extension: ');
+            doc.setFont("courier", "bold");
+            doc.text(ctaromext + 'deg', 75, leftverticalposition);
+            leftverticalposition += 5;
+        }
+        if (hasUserInput(ctaromrrot)) {
+            doc.setFont("courier", "normal");
+            doc.text("Right rotation: ", 20, leftverticalposition);
+            var labelwidth = doc.getTextWidth('Right rotation: ');
+            doc.setFont("courier", "bold");
+            doc.text(ctaromrrot + 'deg', 75, leftverticalposition);
+            leftverticalposition += 5;
+        }
+        if (hasUserInput(ctaromlrot)) {
+            doc.setFont("courier", "normal");
+            doc.text("Left Rotation: ", 20, leftverticalposition);
+            var labelwidth = doc.getTextWidth('Left Rotation: ');
+            doc.setFont("courier", "bold");
+            doc.text(ctaromlrot + 'deg', 75, leftverticalposition);
+            leftverticalposition += 5;
+        }
+        if (hasUserInput(ctaromrsb)) {
+            doc.setFont("courier", "normal");
+            doc.text("Right Sidebending: ", 20, leftverticalposition);
+            var labelwidth = doc.getTextWidth('Right Sidebending: ');
+            doc.setFont("courier", "bold");
+            doc.text(ctaromrsb + 'deg', 75, leftverticalposition);
+            leftverticalposition += 5;
+        }
+        if (hasUserInput(ctaromlsb)) {
+            doc.setFont("courier", "normal");
+            doc.text("Left Sidebending: ", 20, leftverticalposition);
+            var labelwidth = doc.getTextWidth('Left Sidebending: ');
+            doc.setFont("courier", "bold");
+            doc.text(ctaromlsb + 'deg', 75, leftverticalposition);
+            leftverticalposition += 5;
+        }
+
+
+
+
+
+
+        //SET STARTING POSITION FOR PROM
+
+        if (rightverticalposition >= leftverticalposition) {
+            var verticalposition = rightverticalposition;
+            doc.line(20, verticalposition + 5, 190, verticalposition + 5);
+            verticalposition += 15;
+        }
+        else if (rightverticalposition < leftverticalposition) {
+            var verticalposition = leftverticalposition;
+            doc.line(20, verticalposition + 5, 190, verticalposition + 5);
+            verticalposition += 15;
+        }
+        else {
+            var verticalposition = verticalposition;
+        }
+
+
+
+
+
+
+
+
+
+
+        //CT PROM
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        //DISPLAYS CT PROM IF ANY PROM INPUT IS PRESENT
+        if (hasUserInput(ctpromflex)) {
+            doc.setFont("courier", "bold");
+            doc.text("Cervicothoracic PROM", 20, verticalposition);
+            var leftverticalposition = verticalposition;
+            leftverticalposition += 10;
+        }
+        else if (hasUserInput(ctpromext)) {
+            doc.setFont("courier", "bold");
+            doc.text("Cervicothoracic PROM", 20, verticalposition);
+            var leftverticalposition = verticalposition;
+            leftverticalposition += 10;
+        }
+        else if (hasUserInput(ctpromrrot)) {
+            doc.setFont("courier", "bold");
+            doc.text("Cervicothoracic PROM", 20, verticalposition);
+            var leftverticalposition = verticalposition;
+            leftverticalposition += 10;
+        }
+        else if (hasUserInput(ctpromlrot)) {
+            doc.setFont("courier", "bold");
+            doc.text("Cervicothoracic PROM", 20, verticalposition);
+            var leftverticalposition = verticalposition;
+            leftverticalposition += 10;
+        }
+        else if (hasUserInput(ctpromrsb)) {
+            doc.setFont("courier", "bold");
+            doc.text("Cervicothoracic PROM", 20, verticalposition);
+            var leftverticalposition = verticalposition;
+            leftverticalposition += 10;
+        }
+        else if (hasUserInput(ctpromlsb)) {
+            doc.setFont("courier", "bold");
+            doc.text("Cervicothoracic PROM", 20, verticalposition);
+            var leftverticalposition = verticalposition;
+            leftverticalposition += 10;
+        }
+
+
+
+
+
+
+        doc.setFont("courier", "normal");
+        doc.setFontSize(14);
+
+
+        //POPULATE CT PROM MEASUREMENTS
+
+        if (hasUserInput(ctpromflex)) {
+            doc.setFont("courier", "normal");
+            doc.text("Flexion: ", 20, leftverticalposition);
+            var labelwidth = doc.getTextWidth('Flexion: ');
+            doc.setFont("courier", "bold");
+            doc.text(ctpromflex + 'deg', 75, leftverticalposition);
+            leftverticalposition += 5;
+        }
+        if (hasUserInput(ctpromext)) {
+            doc.setFont("courier", "normal");
+            doc.text("Extension: ", 20, leftverticalposition);
+            var labelwidth = doc.getTextWidth('Extension: ');
+            doc.setFont("courier", "bold");
+            doc.text(ctpromext + 'deg', 75, leftverticalposition);
+            leftverticalposition += 5;
+        }
+        if (hasUserInput(ctpromrrot)) {
+            doc.setFont("courier", "normal");
+            doc.text("Right rotation: ", 20, leftverticalposition);
+            var labelwidth = doc.getTextWidth('Right rotation: ');
+            doc.setFont("courier", "bold");
+            doc.text(ctpromrrot + 'deg', 75, leftverticalposition);
+            leftverticalposition += 5;
+        }
+        if (hasUserInput(ctpromlrot)) {
+            doc.setFont("courier", "normal");
+            doc.text("Left Rotation: ", 20, leftverticalposition);
+            var labelwidth = doc.getTextWidth('Left Rotation: ');
+            doc.setFont("courier", "bold");
+            doc.text(ctpromlrot + 'deg', 75, leftverticalposition);
+            leftverticalposition += 5;
+        }
+        if (hasUserInput(ctpromrsb)) {
+            doc.setFont("courier", "normal");
+            doc.text("Right Sidebending: ", 20, leftverticalposition);
+            var labelwidth = doc.getTextWidth('Right Sidebending: ');
+            doc.setFont("courier", "bold");
+            doc.text(ctpromrsb + 'deg', 75, leftverticalposition);
+            leftverticalposition += 5;
+        }
+        if (hasUserInput(ctpromlsb)) {
+            doc.setFont("courier", "normal");
+            doc.text("Left Sidebending: ", 20, leftverticalposition);
+            var labelwidth = doc.getTextWidth('Left Sidebending: ');
+            doc.setFont("courier", "bold");
+            doc.text(ctpromlsb + 'deg', 75, leftverticalposition);
+            leftverticalposition += 5;
+        }
+
+
+
+
+
+
+
+
+
+
+        if (rightverticalposition >= leftverticalposition) {
+            var verticalposition = rightverticalposition;
+            doc.line(20, verticalposition + 5, 190, verticalposition + 5);
+            verticalposition += 15;
+        }
+        else if (rightverticalposition < leftverticalposition) {
+            var verticalposition = leftverticalposition;
+            doc.line(20, verticalposition + 5, 190, verticalposition + 5);
+            verticalposition += 15;
+        }
+        else {
+            var verticalposition = verticalposition;
+        }
+
+
+
+
+
+
+
+
+
+
+        //DISPLAY OBSERVATION INPUT IF PRESENT
+
+
+        if (hasUserInput(ctobservation)) {
+            doc.setFont("courier", "bold");
+            doc.text("Observation: ", 20, verticalposition);
+            var labelwidth = doc.getTextWidth('Observation: ');
+            var ctobservationwidth = doc.getTextWidth(ctobservation);
+            doc.setFont("courier", "normal");
+            var splitObservation = doc.splitTextToSize(trimLineBreaks(ctobservation), 170 - labelwidth);
+            doc.text(splitObservation, labelwidth + 20, verticalposition);
+            if (ctobservationwidth < 170 - labelwidth) {
+                doc.line(20, verticalposition + 5, 190, verticalposition + 5);
+                verticalposition += 15;
+            }
+            else if (ctobservationwidth < (170 - labelwidth) * 2) {
+                doc.line(20, verticalposition + 10, 190, verticalposition + 10);
+                verticalposition += 20;
+            }
+            else if (ctobservationwidth < (170 - labelwidth) * 3) {
+                doc.line(20, verticalposition + 15, 190, verticalposition + 15);
+                verticalposition += 25;
+            }
+            else if (ctobservationwidth < (170 - labelwidth) * 4) {
+                doc.line(20, verticalposition + 20, 190, verticalposition + 20);
+                verticalposition += 30;
+            }
+            else if (ctobservationwidth < (170 - labelwidth) * 5) {
+                doc.line(20, verticalposition + 25, 190, verticalposition + 25);
+                verticalposition += 35;
+            }
+        }
+
+
+
+        //DISPLAY PALPATION INFO
+
+
+        if (hasUserInput(ctpalpation)) {
+            doc.setFont("courier", "bold");
+            doc.text("Palpation: ", 20, verticalposition);
+            var labelwidth = doc.getTextWidth('Palpation: ');
+            var ctpalpationwidth = doc.getTextWidth(ctpalpation);
+            doc.setFont("courier", "normal");
+            var splitPalpation = doc.splitTextToSize(trimLineBreaks(ctpalpation), 170 - labelwidth);
+            doc.text(splitPalpation, labelwidth + 20, verticalposition);
+            if (ctpalpationwidth < 170 - labelwidth) {
+                doc.line(20, verticalposition + 5, 190, verticalposition + 5);
+                verticalposition += 15;
+            }
+            else if (ctpalpationwidth < (170 - labelwidth) * 2) {
+                doc.line(20, verticalposition + 10, 190, verticalposition + 10);
+                verticalposition += 20;
+            }
+            else if (ctpalpationwidth < (170 - labelwidth) * 3) {
+                doc.line(20, verticalposition + 15, 190, verticalposition + 15);
+                verticalposition += 25;
+            }
+            else if (ctpalpationwidth < (170 - labelwidth) * 4) {
+                doc.line(20, verticalposition + 20, 190, verticalposition + 20);
+                verticalposition += 30;
+            }
+            else if (ctpalpationwidth < (170 - labelwidth) * 5) {
+                doc.line(20, verticalposition + 25, 190, verticalposition + 25);
+                verticalposition += 35;
+            }
+
+        }
+
+
+
+
+
+        //DISPLAY MOBILITY INPUT IF PRESENT
+
+
+        if (hasUserInput(ctmobility)) {
+            doc.setFont("courier", "bold");
+            doc.text("Mobility: ", 20, verticalposition);
+            var labelwidth = doc.getTextWidth('Mobility: ');
+            var ctmobilitywidth = doc.getTextWidth(ctmobility);
+            doc.setFont("courier", "normal");
+            var splitMobility = doc.splitTextToSize(trimLineBreaks(ctmobility), 170 - labelwidth);
+            doc.text(splitMobility, labelwidth + 20, verticalposition);
+            if (ctmobilitywidth < 170 - labelwidth) {
+                doc.line(20, verticalposition + 5, 190, verticalposition + 5);
+                verticalposition += 15;
+            }
+            else if (ctmobilitywidth < (170 - labelwidth) * 2) {
+                doc.line(20, verticalposition + 10, 190, verticalposition + 10);
+                verticalposition += 20;
+            }
+            else if (ctmobilitywidth < (170 - labelwidth) * 3) {
+                doc.line(20, verticalposition + 15, 190, verticalposition + 15);
+                verticalposition += 25;
+            }
+            else if (ctmobilitywidth < (170 - labelwidth) * 4) {
+                doc.line(20, verticalposition + 20, 190, verticalposition + 20);
+                verticalposition += 30;
+            }
+            else if (ctmobilitywidth < (170 - labelwidth) * 5) {
+                doc.line(20, verticalposition + 25, 190, verticalposition + 25);
+                verticalposition += 35;
+            }
+        }
+
+
+        //DISPLAY CT SPECIAL TEST INPUT IF PRESENT
+
+
+        if (hasUserInput(ctspecialtests)) {
+            doc.setFont("courier", "bold");
+            doc.text("Special Tests: ", 20, verticalposition);
+            var labelwidth = doc.getTextWidth('Special Tests: ');
+            var ctspecialtestswidth = doc.getTextWidth(ctspecialtests);
+            doc.setFont("courier", "normal");
+            var splitCtspecialtests = doc.splitTextToSize(trimLineBreaks(ctspecialtests), 170 - labelwidth);
+            doc.text(splitCtspecialtests, labelwidth + 20, verticalposition);
+            if (ctpalpationwidth < 170 - labelwidth) {
+                doc.line(20, verticalposition + 5, 190, verticalposition + 5);
+                verticalposition += 15;
+            }
+            else if (ctspecialtestswidth < (170 - labelwidth) * 2) {
+                doc.line(20, verticalposition + 10, 190, verticalposition + 10);
+                verticalposition += 20;
+            }
+            else if (ctspecialtestswidth < (170 - labelwidth) * 3) {
+                doc.line(20, verticalposition + 15, 190, verticalposition + 15);
+                verticalposition += 25;
+            }
+            else if (ctspecialtestswidth < (170 - labelwidth) * 4) {
+                doc.line(20, verticalposition + 20, 190, verticalposition + 20);
+                verticalposition += 30;
+            }
+            else if (ctspecialtestswidth < (170 - labelwidth) * 5) {
+                doc.line(20, verticalposition + 25, 190, verticalposition + 25);
+                verticalposition += 35;
+            }
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    }
+
+
+
+
+    //LS OBJECTIVE
+    if (lscheckbox.checked) {
+        doc.addPage();
+        var verticalposition = 10;
+        doc.setFont("courier", "bold");
+        doc.text("Lumbosacral", 105, verticalposition, 'center');
+        doc.setFont("courier", "normal");
+        verticalposition += 10;
+
+
+
+
+
+
+
+
+
+        //DISPLAYS  LS MMT IF ANY MMT INPUT IS PRESENT
+        if (hasUserInput(lsmmtflex)) {
+            doc.setFont("courier", "bold");
+            doc.text("Cervicothoracic MMT", 20, verticalposition);
+            var leftverticalposition = verticalposition;
+            leftverticalposition += 10;
+        }
+        else if (hasUserInput(lsmmtext)) {
+            doc.setFont("courier", "bold");
+            doc.text("Cervicothoracic MMT", 20, verticalposition);
+            var leftverticalposition = verticalposition;
+            leftverticalposition += 10;
+        }
+        else if (hasUserInput(lsmmtrrot)) {
+            doc.setFont("courier", "bold");
+            doc.text("Cervicothoracic MMT", 20, verticalposition);
+            var leftverticalposition = verticalposition;
+            leftverticalposition += 10;
+        }
+        else if (hasUserInput(lsmmtlrot)) {
+            doc.setFont("courier", "bold");
+            doc.text("Cervicothoracic MMT", 20, verticalposition);
+            var leftverticalposition = verticalposition;
+            leftverticalposition += 10;
+        }
+        else if (hasUserInput(lsmmtrsb)) {
+            doc.setFont("courier", "bold");
+            doc.text("Cervicothoracic MMT", 20, verticalposition);
+            var leftverticalposition = verticalposition;
+            leftverticalposition += 10;
+        }
+        else if (hasUserInput(lsmmtlsb)) {
+            doc.setFont("courier", "bold");
+            doc.text("Cervicothoracic MMT", 20, verticalposition);
+            var leftverticalposition = verticalposition;
+            leftverticalposition += 10;
+        }
+
+
+
+
+
+
+        doc.setFont("courier", "normal");
+        doc.setFontSize(14);
+
+
+        //POPULATE LS MMT MEASUREMENTS
+
+        if (hasUserInput(lsmmtflex)) {
+            doc.setFont("courier", "normal");
+            doc.text("Flexion: ", 20, leftverticalposition);
+            var labelwidth = doc.getTextWidth('Flexion: ');
+            doc.setFont("courier", "bold");
+            doc.text(lsmmtflex + lsmmtplusminusflex.trim() + '/5', 75, leftverticalposition);
+            leftverticalposition += 5;
+        }
+        if (hasUserInput(lsmmtext)) {
+            doc.setFont("courier", "normal");
+            doc.text("Extension: ", 20, leftverticalposition);
+            var labelwidth = doc.getTextWidth('Extension: ');
+            doc.setFont("courier", "bold");
+            doc.text(lsmmtext + lsmmtplusminusext.trim() + '/5', 75, leftverticalposition);
+            leftverticalposition += 5;
+        }
+        if (hasUserInput(lsmmtrrot)) {
+            doc.setFont("courier", "normal");
+            doc.text("Right rotation: ", 20, leftverticalposition);
+            var labelwidth = doc.getTextWidth('Right rotation: ');
+            doc.setFont("courier", "bold");
+            doc.text(lsmmtrrot + lsmmtplusminusrrot.trim() + '/5', 75, leftverticalposition);
+            leftverticalposition += 5;
+        }
+        if (hasUserInput(lsmmtlrot)) {
+            doc.setFont("courier", "normal");
+            doc.text("Left Rotation: ", 20, leftverticalposition);
+            var labelwidth = doc.getTextWidth('Left Rotation: ');
+            doc.setFont("courier", "bold");
+            doc.text(lsmmtlrot + lsmmtplusminuslrot.trim() + '/5', 75, leftverticalposition);
+            leftverticalposition += 5;
+        }
+        if (hasUserInput(lsmmtrsb)) {
+            doc.setFont("courier", "normal");
+            doc.text("Right Sidebending: ", 20, leftverticalposition);
+            var labelwidth = doc.getTextWidth('Right Sidebending: ');
+            doc.setFont("courier", "bold");
+            doc.text(lsmmtrsb + lsmmtplusminusrsb.trim() + '/5', 75, leftverticalposition);
+            leftverticalposition += 5;
+        }
+        if (hasUserInput(lsmmtlsb)) {
+            doc.setFont("courier", "normal");
+            doc.text("Left Sidebending: ", 20, leftverticalposition);
+            var labelwidth = doc.getTextWidth('Left Sidebending: ');
+            doc.setFont("courier", "bold");
+            doc.text(lsmmtlsb + lsmmtplusminuslsb.trim() + '/5', 75, leftverticalposition);
+            leftverticalposition += 5;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        //SET STARTING POSITION FOR AROM
+
+
+        if (rightverticalposition >= leftverticalposition) {
+            var verticalposition = rightverticalposition;
+            doc.line(20, verticalposition + 6, 190, verticalposition + 6);
+            verticalposition += 15;
+        }
+        else if (rightverticalposition < leftverticalposition) {
+            var verticalposition = leftverticalposition;
+            doc.line(20, verticalposition + 5, 190, verticalposition + 5);
+            verticalposition += 15;
+        }
+        else {
+            var verticalposition = verticalposition;
+        }
+
+
+
+
+
+
+
+
+
+
+
+        //LS AROM
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        //DISPLAYS LS AROM IF ANY AROM INPUT IS PRESENT
+        if (hasUserInput(lsaromflex)) {
+            doc.setFont("courier", "bold");
+            doc.text("Cervicothoracic AROM", 20, verticalposition);
+            var leftverticalposition = verticalposition;
+            leftverticalposition += 10;
+        }
+        else if (hasUserInput(lsaromext)) {
+            doc.setFont("courier", "bold");
+            doc.text("Cervicothoracic AROM", 20, verticalposition);
+            var leftverticalposition = verticalposition;
+            leftverticalposition += 10;
+        }
+        else if (hasUserInput(lsaromrrot)) {
+            doc.setFont("courier", "bold");
+            doc.text("Cervicothoracic AROM", 20, verticalposition);
+            var leftverticalposition = verticalposition;
+            leftverticalposition += 10;
+        }
+        else if (hasUserInput(lsaromlrot)) {
+            doc.setFont("courier", "bold");
+            doc.text("Cervicothoracic AROM", 20, verticalposition);
+            var leftverticalposition = verticalposition;
+            leftverticalposition += 10;
+        }
+        else if (hasUserInput(lsaromrsb)) {
+            doc.setFont("courier", "bold");
+            doc.text("Cervicothoracic AROM", 20, verticalposition);
+            var leftverticalposition = verticalposition;
+            leftverticalposition += 10;
+        }
+        else if (hasUserInput(lsaromlsb)) {
+            doc.setFont("courier", "bold");
+            doc.text("Cervicothoracic AROM", 20, verticalposition);
+            var leftverticalposition = verticalposition;
+            leftverticalposition += 10;
+        }
+
+
+
+
+
+
+        doc.setFont("courier", "normal");
+        doc.setFontSize(14);
+
+
+        //POPULATE LS AROM MEASUREMENTS
+
+        if (hasUserInput(lsaromflex)) {
+            doc.setFont("courier", "normal");
+            doc.text("Flexion: ", 20, leftverticalposition);
+            var labelwidth = doc.getTextWidth('Flexion: ');
+            doc.setFont("courier", "bold");
+            doc.text(lsaromflex + 'deg', 75, leftverticalposition);
+            leftverticalposition += 5;
+        }
+        if (hasUserInput(lsaromext)) {
+            doc.setFont("courier", "normal");
+            doc.text("Extension: ", 20, leftverticalposition);
+            var labelwidth = doc.getTextWidth('Extension: ');
+            doc.setFont("courier", "bold");
+            doc.text(lsaromext + 'deg', 75, leftverticalposition);
+            leftverticalposition += 5;
+        }
+        if (hasUserInput(lsaromrrot)) {
+            doc.setFont("courier", "normal");
+            doc.text("Right rotation: ", 20, leftverticalposition);
+            var labelwidth = doc.getTextWidth('Right rotation: ');
+            doc.setFont("courier", "bold");
+            doc.text(lsaromrrot + 'deg', 75, leftverticalposition);
+            leftverticalposition += 5;
+        }
+        if (hasUserInput(lsaromlrot)) {
+            doc.setFont("courier", "normal");
+            doc.text("Left Rotation: ", 20, leftverticalposition);
+            var labelwidth = doc.getTextWidth('Left Rotation: ');
+            doc.setFont("courier", "bold");
+            doc.text(lsaromlrot + 'deg', 75, leftverticalposition);
+            leftverticalposition += 5;
+        }
+        if (hasUserInput(lsaromrsb)) {
+            doc.setFont("courier", "normal");
+            doc.text("Right Sidebending: ", 20, leftverticalposition);
+            var labelwidth = doc.getTextWidth('Right Sidebending: ');
+            doc.setFont("courier", "bold");
+            doc.text(lsaromrsb + 'deg', 75, leftverticalposition);
+            leftverticalposition += 5;
+        }
+        if (hasUserInput(lsaromlsb)) {
+            doc.setFont("courier", "normal");
+            doc.text("Left Sidebending: ", 20, leftverticalposition);
+            var labelwidth = doc.getTextWidth('Left Sidebending: ');
+            doc.setFont("courier", "bold");
+            doc.text(lsaromlsb + 'deg', 75, leftverticalposition);
+            leftverticalposition += 5;
+        }
+
+
+
+
+
+
+        //SET STARTING POSITION FOR PROM
+
+        if (rightverticalposition >= leftverticalposition) {
+            var verticalposition = rightverticalposition;
+            doc.line(20, verticalposition + 5, 190, verticalposition + 5);
+            verticalposition += 15;
+        }
+        else if (rightverticalposition < leftverticalposition) {
+            var verticalposition = leftverticalposition;
+            doc.line(20, verticalposition + 5, 190, verticalposition + 5);
+            verticalposition += 15;
+        }
+        else {
+            var verticalposition = verticalposition;
+        }
+
+
+
+
+
+
+
+
+
+
+        //LS PROM
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        //DISPLAYS LS PROM IF ANY PROM INPUT IS PRESENT
+        if (hasUserInput(lspromflex)) {
+            doc.setFont("courier", "bold");
+            doc.text("Cervicothoracic PROM", 20, verticalposition);
+            var leftverticalposition = verticalposition;
+            leftverticalposition += 10;
+        }
+        else if (hasUserInput(lspromext)) {
+            doc.setFont("courier", "bold");
+            doc.text("Cervicothoracic PROM", 20, verticalposition);
+            var leftverticalposition = verticalposition;
+            leftverticalposition += 10;
+        }
+        else if (hasUserInput(lspromrrot)) {
+            doc.setFont("courier", "bold");
+            doc.text("Cervicothoracic PROM", 20, verticalposition);
+            var leftverticalposition = verticalposition;
+            leftverticalposition += 10;
+        }
+        else if (hasUserInput(lspromlrot)) {
+            doc.setFont("courier", "bold");
+            doc.text("Cervicothoracic PROM", 20, verticalposition);
+            var leftverticalposition = verticalposition;
+            leftverticalposition += 10;
+        }
+        else if (hasUserInput(lspromrsb)) {
+            doc.setFont("courier", "bold");
+            doc.text("Cervicothoracic PROM", 20, verticalposition);
+            var leftverticalposition = verticalposition;
+            leftverticalposition += 10;
+        }
+        else if (hasUserInput(lspromlsb)) {
+            doc.setFont("courier", "bold");
+            doc.text("Cervicothoracic PROM", 20, verticalposition);
+            var leftverticalposition = verticalposition;
+            leftverticalposition += 10;
+        }
+
+
+
+
+
+
+        doc.setFont("courier", "normal");
+        doc.setFontSize(14);
+
+
+        //POPULATE LS PROM MEASUREMENTS
+
+        if (hasUserInput(lspromflex)) {
+            doc.setFont("courier", "normal");
+            doc.text("Flexion: ", 20, leftverticalposition);
+            var labelwidth = doc.getTextWidth('Flexion: ');
+            doc.setFont("courier", "bold");
+            doc.text(lspromflex + 'deg', 75, leftverticalposition);
+            leftverticalposition += 5;
+        }
+        if (hasUserInput(lspromext)) {
+            doc.setFont("courier", "normal");
+            doc.text("Extension: ", 20, leftverticalposition);
+            var labelwidth = doc.getTextWidth('Extension: ');
+            doc.setFont("courier", "bold");
+            doc.text(lspromext + 'deg', 75, leftverticalposition);
+            leftverticalposition += 5;
+        }
+        if (hasUserInput(lspromrrot)) {
+            doc.setFont("courier", "normal");
+            doc.text("Right rotation: ", 20, leftverticalposition);
+            var labelwidth = doc.getTextWidth('Right rotation: ');
+            doc.setFont("courier", "bold");
+            doc.text(lspromrrot + 'deg', 75, leftverticalposition);
+            leftverticalposition += 5;
+        }
+        if (hasUserInput(lspromlrot)) {
+            doc.setFont("courier", "normal");
+            doc.text("Left Rotation: ", 20, leftverticalposition);
+            var labelwidth = doc.getTextWidth('Left Rotation: ');
+            doc.setFont("courier", "bold");
+            doc.text(lspromlrot + 'deg', 75, leftverticalposition);
+            leftverticalposition += 5;
+        }
+        if (hasUserInput(lspromrsb)) {
+            doc.setFont("courier", "normal");
+            doc.text("Right Sidebending: ", 20, leftverticalposition);
+            var labelwidth = doc.getTextWidth('Right Sidebending: ');
+            doc.setFont("courier", "bold");
+            doc.text(lspromrsb + 'deg', 75, leftverticalposition);
+            leftverticalposition += 5;
+        }
+        if (hasUserInput(lspromlsb)) {
+            doc.setFont("courier", "normal");
+            doc.text("Left Sidebending: ", 20, leftverticalposition);
+            var labelwidth = doc.getTextWidth('Left Sidebending: ');
+            doc.setFont("courier", "bold");
+            doc.text(lspromlsb + 'deg', 75, leftverticalposition);
+            leftverticalposition += 5;
+        }
+
+
+
+
+
+
+
+
+
+
+        if (rightverticalposition >= leftverticalposition) {
+            var verticalposition = rightverticalposition;
+            doc.line(20, verticalposition + 5, 190, verticalposition + 5);
+            verticalposition += 15;
+        }
+        else if (rightverticalposition < leftverticalposition) {
+            var verticalposition = leftverticalposition;
+            doc.line(20, verticalposition + 5, 190, verticalposition + 5);
+            verticalposition += 15;
+        }
+        else {
+            var verticalposition = verticalposition;
+        }
+
+
+
+
+
+
+
+
+
+
+        //DISPLAY OBSERVATION INPUT IF PRESENT
+
+
+        if (hasUserInput(lsobservation)) {
+            doc.setFont("courier", "bold");
+            doc.text("Observation: ", 20, verticalposition);
+            var labelwidth = doc.getTextWidth('Observation: ');
+            var lsobservationwidth = doc.getTextWidth(lsobservation);
+            doc.setFont("courier", "normal");
+            var splitObservation = doc.splitTextToSize(trimLineBreaks(lsobservation), 170 - labelwidth);
+            doc.text(splitObservation, labelwidth + 20, verticalposition);
+            if (lsobservationwidth < 170 - labelwidth) {
+                doc.line(20, verticalposition + 5, 190, verticalposition + 5);
+                verticalposition += 15;
+            }
+            else if (lsobservationwidth < (170 - labelwidth) * 2) {
+                doc.line(20, verticalposition + 10, 190, verticalposition + 10);
+                verticalposition += 20;
+            }
+            else if (lsobservationwidth < (170 - labelwidth) * 3) {
+                doc.line(20, verticalposition + 15, 190, verticalposition + 15);
+                verticalposition += 25;
+            }
+            else if (lsobservationwidth < (170 - labelwidth) * 4) {
+                doc.line(20, verticalposition + 20, 190, verticalposition + 20);
+                verticalposition += 30;
+            }
+            else if (lsobservationwidth < (170 - labelwidth) * 5) {
+                doc.line(20, verticalposition + 25, 190, verticalposition + 25);
+                verticalposition += 35;
+            }
+        }
+
+
+
+        //DISPLAY PALPATION INFO
+
+
+        if (hasUserInput(lspalpation)) {
+            doc.setFont("courier", "bold");
+            doc.text("Palpation: ", 20, verticalposition);
+            var labelwidth = doc.getTextWidth('Palpation: ');
+            var lspalpationwidth = doc.getTextWidth(lspalpation);
+            doc.setFont("courier", "normal");
+            var splitPalpation = doc.splitTextToSize(trimLineBreaks(lspalpation), 170 - labelwidth);
+            doc.text(splitPalpation, labelwidth + 20, verticalposition);
+            if (lspalpationwidth < 170 - labelwidth) {
+                doc.line(20, verticalposition + 5, 190, verticalposition + 5);
+                verticalposition += 15;
+            }
+            else if (lspalpationwidth < (170 - labelwidth) * 2) {
+                doc.line(20, verticalposition + 10, 190, verticalposition + 10);
+                verticalposition += 20;
+            }
+            else if (lspalpationwidth < (170 - labelwidth) * 3) {
+                doc.line(20, verticalposition + 15, 190, verticalposition + 15);
+                verticalposition += 25;
+            }
+            else if (lspalpationwidth < (170 - labelwidth) * 4) {
+                doc.line(20, verticalposition + 20, 190, verticalposition + 20);
+                verticalposition += 30;
+            }
+            else if (lspalpationwidth < (170 - labelwidth) * 5) {
+                doc.line(20, verticalposition + 25, 190, verticalposition + 25);
+                verticalposition += 35;
+            }
+
+        }
+
+
+
+
+
+        //DISPLAY MOBILITY INPUT IF PRESENT
+
+
+        if (hasUserInput(lsmobility)) {
+            doc.setFont("courier", "bold");
+            doc.text("Mobility: ", 20, verticalposition);
+            var labelwidth = doc.getTextWidth('Mobility: ');
+            var lsmobilitywidth = doc.getTextWidth(lsmobility);
+            doc.setFont("courier", "normal");
+            var splitMobility = doc.splitTextToSize(trimLineBreaks(lsmobility), 170 - labelwidth);
+            doc.text(splitMobility, labelwidth + 20, verticalposition);
+            if (lsmobilitywidth < 170 - labelwidth) {
+                doc.line(20, verticalposition + 5, 190, verticalposition + 5);
+                verticalposition += 15;
+            }
+            else if (lsmobilitywidth < (170 - labelwidth) * 2) {
+                doc.line(20, verticalposition + 10, 190, verticalposition + 10);
+                verticalposition += 20;
+            }
+            else if (lsmobilitywidth < (170 - labelwidth) * 3) {
+                doc.line(20, verticalposition + 15, 190, verticalposition + 15);
+                verticalposition += 25;
+            }
+            else if (lsmobilitywidth < (170 - labelwidth) * 4) {
+                doc.line(20, verticalposition + 20, 190, verticalposition + 20);
+                verticalposition += 30;
+            }
+            else if (lsmobilitywidth < (170 - labelwidth) * 5) {
+                doc.line(20, verticalposition + 25, 190, verticalposition + 25);
+                verticalposition += 35;
+            }
+        }
+
+
+        //DISPLAY LS SPECIAL TEST INPUT IF PRESENT
+
+
+        if (hasUserInput(lsspecialtests)) {
+            doc.setFont("courier", "bold");
+            doc.text("Special Tests: ", 20, verticalposition);
+            var labelwidth = doc.getTextWidth('Special Tests: ');
+            var lsspecialtestswidth = doc.getTextWidth(lsspecialtests);
+            doc.setFont("courier", "normal");
+            var splitLsspecialtests = doc.splitTextToSize(trimLineBreaks(lsspecialtests), 170 - labelwidth);
+            doc.text(splitLsspecialtests, labelwidth + 20, verticalposition);
+            if (lspalpationwidth < 170 - labelwidth) {
+                doc.line(20, verticalposition + 5, 190, verticalposition + 5);
+                verticalposition += 15;
+            }
+            else if (lsspecialtestswidth < (170 - labelwidth) * 2) {
+                doc.line(20, verticalposition + 10, 190, verticalposition + 10);
+                verticalposition += 20;
+            }
+            else if (lsspecialtestswidth < (170 - labelwidth) * 3) {
+                doc.line(20, verticalposition + 15, 190, verticalposition + 15);
+                verticalposition += 25;
+            }
+            else if (lsspecialtestswidth < (170 - labelwidth) * 4) {
+                doc.line(20, verticalposition + 20, 190, verticalposition + 20);
+                verticalposition += 30;
+            }
+            else if (lsspecialtestswidth < (170 - labelwidth) * 5) {
+                doc.line(20, verticalposition + 25, 190, verticalposition + 25);
+                verticalposition += 35;
+            }
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    }
 
 
     doc.save("pteval.pdf")

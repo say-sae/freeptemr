@@ -6698,6 +6698,129 @@ function generatePDF() {
     }
 
 
+
+
+
+
+
+
+
+
+
+
+    /*SUBJECTIVE*/{
+        if (hasUserInput(impairments)) {
+            doc.addPage();
+            var verticalposition = 10;
+            doc.setFont("courier", "bold");
+            doc.text("Assessment & Plan", 105, verticalposition, 'center');
+            doc.setFont("courier", "normal");
+            verticalposition += 10;
+        }
+        else if (hasUserInput(limitations)) {
+            doc.addPage();
+            var verticalposition = 10;
+            doc.setFont("courier", "bold");
+            doc.text("Assessment & Plan", 105, verticalposition, 'center');
+            doc.setFont("courier", "normal");
+            verticalposition += 10;
+        }
+        else if (hasUserInput(assessmenttext)) {
+            doc.addPage();
+            var verticalposition = 10;
+            doc.setFont("courier", "bold");
+            doc.text("Assessment & Plan", 105, verticalposition, 'center');
+            doc.setFont("courier", "normal");
+            verticalposition += 10;
+        }
+
+
+
+
+        //POPULATE ASSESSMENT SHIT
+
+
+
+        if (hasUserInput(impairments)) {
+            doc.setFont("courier", "bold");
+            doc.text("Impairments: ", 20, verticalposition);
+            var locwidth = doc.getTextWidth('Location: ');
+            doc.setFont("courier", "normal");
+            var splitimpairments = doc.splitTextToSize(trimLineBreaks(impairments), 170 - locwidth);
+            doc.text(splitimpairments, locwidth + 20, verticalposition);
+            var impairmentswidth = doc.getTextWidth(impairments);
+            if (impairmentswidth < 170 - locwidth) {
+                verticalposition += 10;
+            }
+            else if (impairmentswidth < (170 - locwidth) * 2) {
+                verticalposition += 20;
+            }
+            else if (impairmentswidth < (170 - locwidth) * 3) {
+                verticalposition += 25;
+            }
+            else if (impairmentswidth < (170 - locwidth) * 4) {
+                verticalposition += 30;
+            }
+            else if (impairmentswidth < (170 - locwidth) * 5) {
+                verticalposition += 35;
+            }
+        }
+
+        if (hasUserInput(limitations)) {
+            doc.setFont("courier", "bold");
+            doc.text("Limitations: ", 20, verticalposition);
+            var locwidth = doc.getTextWidth('Location: ');
+            doc.setFont("courier", "normal");
+            var splitlimitations = doc.splitTextToSize(trimLineBreaks(limitations), 170 - locwidth);
+            doc.text(splitlimitations, locwidth + 20, verticalposition);
+            var limitationswidth = doc.getTextWidth(limitations);
+            if (limitationswidth < 170 - locwidth) {
+                verticalposition += 10;
+            }
+            else if (limitationswidth < (170 - locwidth) * 2) {
+                verticalposition += 20;
+            }
+            else if (limitationswidth < (170 - locwidth) * 3) {
+                verticalposition += 25;
+            }
+            else if (limitationswidth < (170 - locwidth) * 4) {
+                verticalposition += 30;
+            }
+            else if (limitationswidth < (170 - locwidth) * 5) {
+                verticalposition += 35;
+            }
+        }
+
+        if (hasUserInput(assessmenttext)) {
+            doc.setFont("courier", "bold");
+            doc.text("Assessmenttext: ", 20, verticalposition);
+            var locwidth = doc.getTextWidth('Location: ');
+            doc.setFont("courier", "normal");
+            var splitassessmenttext = doc.splitTextToSize(trimLineBreaks(assessmenttext), 170 - locwidth);
+            doc.text(splitassessmenttext, locwidth + 20, verticalposition);
+            var assessmenttextwidth = doc.getTextWidth(assessmenttext);
+            if (assessmenttextwidth < 170 - locwidth) {
+                verticalposition += 10;
+            }
+            else if (assessmenttextwidth < (170 - locwidth) * 2) {
+                verticalposition += 20;
+            }
+            else if (assessmenttextwidth < (170 - locwidth) * 3) {
+                verticalposition += 25;
+            }
+            else if (assessmenttextwidth < (170 - locwidth) * 4) {
+                verticalposition += 30;
+            }
+            else if (assessmenttextwidth < (170 - locwidth) * 5) {
+                verticalposition += 35;
+            }
+        }
+
+
+    }
+
+
+
     doc.save("pteval.pdf")
 
 } 

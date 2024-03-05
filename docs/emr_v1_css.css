@@ -140,9 +140,9 @@ div {
 .planinput {
     border: 2px solid black;
     margin: 0px 20px 10px 4px;
-    padding: 4px;
-    width: 25%;
-    justify-content: left;
+    padding: 8px;
+    align-content: center;
+    justify-content: center;
     background-color: #ffffff;
 
 }
@@ -173,8 +173,7 @@ div {
 
 #plandiv {
     background-color: rgba(243, 238, 238, 0.753);
-    margin-right: 40%;
-    margin-left: 40%;
+ 
     justify-content: space-around;
 }
 
